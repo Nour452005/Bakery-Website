@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      font-family: cursive, sans-serif;
+      background-image: url("background2.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-image: url('nav.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 30px;
+      box-sizing: border-box;
+      z-index: 10;
+    }
+
+    .nav-links {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgb(219, 34, 111);
+      transform: scale(1.1);
+    }
+
+    .search-bar {
+      position: absolute;
+      right: 30px;
+    }
+
+    .search-bar input {
+      width: 200px;
+      padding: 8px 14px;
+      font-size: 15px;
+      color: #d6336c;
+      background-color: #fff0f6;
+      border: 2px solid #f8a1c4;
+      border-radius: 25px;
+      box-shadow: 0 4px 6px rgba(246, 189, 223, 0.4);
+      outline: none;
+    }
+
+    .search-bar input::placeholder {
+      color: #f4a1c9;
+      font-style: italic;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 120px 30px 40px;
+      max-width: 1100px;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 280px;
+      max-width: 600px;
+      padding: 20px;
+      background-color: rgba(255, 192, 203, 0.7);
+      border-radius: 15px;
+      color: rgb(151, 64, 64);
+    }
+
+    .text p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .cup {
+      flex-shrink: 0;
+      width: 250px;
+    }
+
+    .cup img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: rgba(255, 192, 203, 0.8);
+      text-align: center;
+      padding: 15px 20px;
+      color: #a8004c;
+      margin-top: 40px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 -2px 8px rgba(246, 189, 223, 0.5);
+    }
+
+    footer a {
+      color: #d6336c;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #f0618a;
+      text-decoration: underline;
+    }
+
+    .footer-content p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+      }
+
+      .nav-links {
+        position: static;
+        transform: none;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .search-bar {
+        position: static;
+        margin-top: 10px;
+      }
+
+      main {
+        flex-direction: column;
+        padding-top: 120px;
+      }
+
+      .cup {
+        width: 80%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+    </div>
+  </nav>
+
+  <main>
+    <div class="text">
+      <p>
+        At first, Dream Bakery was just a quiet idea — a little shop that believed cupcakes could tell stories, spark joy, and bring comfort in a single bite. Many doubted it. "Just cupcakes?" they’d say with a smile that didn’t quite believe.
+        <br><br>
+        But we believed. We believed in the magic of soft frosting, in the colors of sprinkles, and in the happiness baked into every swirl.
+        <br><br>
+        There were hard days. Days when the world didn’t quite see what we saw. But we kept baking. We kept dreaming. And slowly, that dream rose — just like the cupcakes in our ovens. We explored new flavors, created cozy corners for sweet moments, and built something more than a bakery: we built a place of warmth and wonder.
+        <br><br>
+        Today, Dream Bakery is more than cupcakes. A place that stands out — not in spite of the dream, but because of it.
+        <br><br>
+        Welcome to Dream Bakery — where every bite is a dream realized. 🍰✨ Stop by, grab a treat, and share a moment with us — we’re always baking something special.
+      </p>
+    </div>
+
+    <div class="cup">
+      <a href="https://youtu.be/f0T7kzaKST0?si=ZhO0Sl8w9Vg_XHr4" target="_blank">
+        <img src="quote cupcake.jpg" title="Cup cake story teller" />
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Dream Bakery. All rights reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
