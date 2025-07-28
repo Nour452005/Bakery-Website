@@ -18,8 +18,7 @@
   min-height: 100vh;
   overflow-x: hidden;
 
-  /* Uncomment if you want fixed bg but test on mobile browsers */
-  /* background-attachment: fixed; */
+
 }
 body {
   display: flex;
@@ -191,41 +190,40 @@ color: rgb(151, 64, 64);
       opacity: 1;
     }
 
-    footer {
-      background-color: rgba(255, 192, 203, 0.8); /* translucent pink */
-      text-align: center;
-      padding: 15px 20px;
-      font-family: cursive, sans-serif;
-      color: #a8004c; /* deep pink */
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      box-shadow: 0 -2px 8px rgba(246, 189, 223, 0.5);
-      margin-top: 40px;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-    }
+ footer {
+  background-color: rgba(255, 192, 203, 0.8); /* translucent pink */
+  text-align: center;
+  padding: 15px 20px;
+  font-family: cursive, sans-serif;
+  color: #a8004c; /* deep pink */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 8px rgba(246, 189, 223, 0.5);
+  margin-top: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
-    footer a {
-      color: #d6336c; /* bright pink */
-      text-decoration: none;
-      margin: 0 8px;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
+footer a {
+  color: #d6336c; /* bright pink */
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
 
-    footer a:hover {
-      color: #f0618a; /* lighter pink on hover */
-      text-decoration: underline;
-    }
+footer a:hover {
+  color: #f0618a;
+  text-decoration: underline;
+}
 
-    .footer-content p {
-      margin: 5px 0;
-      font-size: 16px;
-    }
+.footer-content p {
+  margin: 5px 0;
+  font-size: 16px;
+}
 
-
-    /* Responsive Styles */
+   
 
     @media (max-width: 900px) {
       .main {
@@ -246,7 +244,7 @@ color: rgb(151, 64, 64);
         font-size: 16px;
         margin-top: 20px;
       }
-      /* Keep animation as is - no changes here */
+     
     }
 
     @media (max-width: 600px) {
@@ -286,7 +284,7 @@ color: rgb(151, 64, 64);
       footer .footer-content p {
         font-size: 14px;
       }
-      /* Slightly smaller quote box */
+     
       .quote-box {
         width: 240px;
         height: 70px;
